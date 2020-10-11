@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Among Us Voting</title>
+	<!--<script src="https://code.jquery.com/jquery-3.5.0.js"></script>-->
+	<script src="js/jquery-3.5.1.debug.js"></script>
+	<style type="text/css">
+		@font-face {
+		    font-family: 'msb';
+		    src: url('fonts/mercedes-serial-bold.ttf');
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var p1count = 0, 
+			    p2count = 0,
+				p3count = 0,
+				p4count = 0,
+				p5count = 0,
+				p6count = 0,
+				p7count = 0,
+				p8count = 0,
+				p9count = 0,
+				p10count = 0;
+			$( "#p1" ).click(function(){
+			   //alert(1);
+			   var svote = $("#p1vote");
+			   p1count=p1count + 1;
+			   //alert(p1count);
+			   if (p1count < 11 ){
+					svote.text(p1count);
+			   }
+
+			});
+
+			$("#p2").click(function(){
+				var svote = $("#p2vote");
+			   p2count=p2count + 1;
+			   if (p2count < 11 ){
+					svote.text(p2count);
+			   }
+			});
+
+			$("#p3").click(function(){
+				var svote = $("#p3vote");
+			   p3count=p3count + 1;
+			   if (p3count < 11 ){
+					svote.text(p3count);
+			   }
+			});
+			$("#p4").click(function(){
+				var svote = $("#p4vote");
+			   p4count=p4count + 1;
+			   if (p4count < 11 ){
+					svote.text(p4count);
+			   }
+			});
+			$("#p5").click(function(){
+				var svote = $("#p5vote");
+			   p5count=p5count + 1;
+			   if (p5count < 11 ){
+					svote.text(p5count);
+			   }
+			});
+			$("#p6").click(function(){
+				var svote = $("#p6vote");
+			   p6count=p6count + 1;
+			   if (p6count < 11 ){
+					svote.text(p6count);
+			   }
+			});
+			$("#p7").click(function(){
+				var svote = $("#p7vote");
+			   p7count=p7count + 1;
+			   if (p7count < 11 ){
+					svote.text(p7count);
+			   }
+			});
+			$("#p8").click(function(){
+				var svote = $("#p8vote");
+			   p8count=p8count + 1;
+			   if (p8count < 11 ){
+					svote.text(p8count);
+			   }
+			});
+			$("#p9").click(function(){
+				var svote = $("#p9vote");
+			   p9count=p9count + 1;
+			   if (p9count < 11 ){
+					svote.text(p9count);
+			   }
+			});
+			$("#p10").click(function(){
+				var svote = $("#p10vote");
+			   p10count=p10count + 1;
+			   if (p10count < 11 ){
+					svote.text(p10count);
+			   }
+			});
+		});
+	</script>
+</head>
+<body>
+	<div style="width: 856px; height: 581px; background: url(images/tablet.png)">
+		<div style="height: 100%; position: relative; top: 34px; left: 37px; width: 733px; height: 508px; ">
+			<div style="width: 100%; height: 50px; font-size: 32pt; text-align: center; position: relative; top: 30px; font-family: msb; color: white; -webkit-text-stroke: 2px black;">
+				Who Is The Impostor?
+			</div>	
+			<div style="position: relative; width: 100%; height: 408px; top: 50px;">
+				<div style="width: 100%; height: 60px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p1" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(0deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Em <span id="p1vote"></span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p2" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(250deg); float: left; ">
+						</div>
+						<div  style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Aya <span id="p2vote"></span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div id="p3" style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(280deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Janlo <span id="p3vote"></span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p4" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(60deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Carl <span id="p4vote"></span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p5" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(320deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Micko <span id="p5vote"></span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p6" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(190deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Heart <span id="p6vote"></span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p7" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(40deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Star <span id="p7vote"></span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p8" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(70deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Peanut <span id="p8vote"></span>
+						</div>
+					</div>
+				</div>
+
+				<div style="width: 100%; height: 60px; margin-top: 10px;" >
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p9" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(300deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Ice <span id="p9vote"></span>
+						</div>
+					</div>
+					<div style="background-color: white; opacity: 0.8; width: 320px; height: 100%; border: 2px solid black; border-radius: 5px; float: left; margin-left: 30px;">
+						<div id="p10" style="background-color: yellow; width: 55px; height: 46px; background-image: url(images/player.png); background-repeat: no-repeat; position: relative; top: 8px; left: 6px; filter:  hue-rotate(90deg); float: left; ">
+						</div>
+						<div style="width: 200px; height: calc(100% - 12px); float: left; margin-left: 20px; font-size: 24pt; font-family: msb; padding-top: 12px; color: white; -webkit-text-stroke: 2px black;">
+							Milktea <span id="p10vote"></span>
+						</div>
+					</div>
+				</div>
+
+
+			</div>	
+		</div>
+		
+	</div>
+</body>
+</html>
